@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Process Digitalization</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+</head>
+<body>
+    <h1>Upload CSV Files</h1>
+    <form id="upload-form">
+        <label for="groups">Groups CSV:</label>
+        <input type="file" id="groups" name="groups" accept=".csv" required><br><br>
+        <label for="hostels">Hostels CSV:</label>
+        <input type="file" id="hostels" name="hostels" accept=".csv" required><br><br>
+        <input type="submit" value="Upload">
+    </form>
+    <div id="results"></div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</body>
+</html>
